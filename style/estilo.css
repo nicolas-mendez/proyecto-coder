@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.fondoColor{
+    background-color: #dfdbda;
+}
+
+.borderColor{
+    border: solid .1rem #000;
+}
