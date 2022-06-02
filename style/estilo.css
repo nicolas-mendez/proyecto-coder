@@ -10,3 +10,34 @@
 .borderColor{
     border: solid .1rem #000;
 }
+
+
+/*-----------------------------FOOTER------------------------------------*/
+
+.footer{
+    padding: .5rem;
+    display: grid;
+    grid-template-areas: 
+    "redes-sociales"
+    "copy"
+    ;
+    justify-content: center;
+    grid-gap: 1rem;
+}
+
+.footer p{
+    font-size: 1rem;
+    grid-area: copy;   
+}
+
+.iconsRedes{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    grid-area: redes-sociales;
+}
+
+.iconsRedes i{
+    color: #000;
+
+}
