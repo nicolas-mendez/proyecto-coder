@@ -129,3 +129,14 @@
 
 
 /*-----------------Preguntas frecuentes--------------------*/
+
+.preguntas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cajapreguntas{
+    width: 65%;
+}
