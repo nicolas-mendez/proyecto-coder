@@ -230,7 +230,7 @@
 .wave span{
     position: absolute;
     display: block;
-    border: 3px solid #00002a;
+    border: 5px dashed #00002a;
     border-radius: 50%;
     box-shadow: 0 5px 0 #014d1a;
     animation: animate 3s ease-in-out infinite;
