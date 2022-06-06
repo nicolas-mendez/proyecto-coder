@@ -1,1 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.fondoColor {
+    background-color: #dfdbda;
+}
+
+.borderColor {
+    border: solid .1rem #000;
+}
+
+
+/*-----------------------------FOOTER------------------------------------*/
+
+.footer {
+    padding: .5rem;
+    display: grid;
+    grid-template-areas:
+        "redes-sociales"
+        "copy"
+    ;
+    justify-content: center;
+    grid-gap: 1rem;
+}
+
+.footer p {
+    font-size: 1rem;
+    grid-area: copy;
+}
+
+.iconsRedes {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    grid-area: redes-sociales;
+}
+
+.iconsRedes i {
+    color: #000;
+
+}
+
+/*-------------------------here-------------------------------*/
+
+.here {
+    background-color: #eae9d2;
+    padding: 1rem;
+}
+
+.hereTitulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+}
+
+/*--------------------------main*-----------------------------*/
+
+.main {
+    background-color: #e9f9ff;
+    padding: 1rem;
+}
+
+.mainTitulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*----------------------Ofertas-------------------------*/
+
+.ofertas {
+    background-color: #b8dbd3;
+    padding: 2rem;
+    text-align: center;
+}
+
+.ofertas h2 {
+    padding-bottom: 1rem;
+    font-family: 'nunito', sans-serif;
+}
+
+.cajaOfertas {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.ofertaProd {
+    font-family: sans-serif;
+    width: 30%;
+}
+
+.ofertaProd .imgOferta {
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+}
+
+.ofertaProd .imgOferta img {
+    width: 105%;
+    transition: all 0.5s;
+}
+
+.ofertaProd:hover .imgOferta img {
+    transform: scale(1.2);
+}
+
+.ofertaProd .imgOferta .promo {
+    position: absolute;
+    top: 10px;
+    left: 0;
+
+    font-size: 1.2rem;
+    background: #f0ff00;
+    padding: .5rem;
+    color: black;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.ofertaProd .nombreOferta {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.ofertaProd .nombreOferta h3 {
+    margin: 0;
+}
+
+.ofertaProd .nombreOferta h3,
+.ofertaProd .nombreOferta strong,
+.ofertaProd .nombreOferta span {
+    padding: 5px 15px;
+    width: 100%;
+}
+
+.ofertaProd .añadirCarrito {
+    margin-top: 2px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.ofertaProd .añadirCarrito:hover {
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+
+/*-------------------------Productos--------------------*/
+.productos {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.carta {
+    width: 25%;
+    border: #000 solid .1rem;
+}
+
+.producto {
+    background-color: #d2e0f2;
+}
+
+.producto-a {
+    font-family: 'Nunito', sans-serif;
+}
+
+.nombreProducto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.producto a {
+    text-decoration: none;
+    color: #000;
+}
+
+.producto a:hover {
+    text-decoration: underline;
+}
+
+.producto .imgProducto {
+    overflow: hidden;
+}
+
+.producto .imgProducto img {
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.producto:hover .imgProducto img {
+    transform: scale(1.3);
+}
+
+
+/*-----------------Preguntas frecuentes--------------------*/
+
+.animacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1d1e2c;
+}
+
+.wave {
+    height: 306px;
+    width: 306px;
+    transform-style: preserve-3d;
+    transform: perspective(500px) rotatex(60deg);
+}
+
+.wave span {
+    position: absolute;
+    display: block;
+    border: 5px dashed #00002a;
+    border-radius: 50%;
+    box-shadow: 0 5px 0 #014d1a;
+    animation: animate 3s ease-in-out infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        transform: translateZ(-100px);
+    }
+
+    50% {
+        transform: translateZ(100px);
+    }
+}
+
+.wave span:nth-child(1),
+.wave span:nth-child(5),
+.wave span:nth-child(9),
+.wave span:nth-child(13) {
+    border-color: #b190d6;
+    box-shadow: 0 5px 0 #b1a2c5;
+}
+
+.wave span:nth-child(2),
+.wave span:nth-child(6),
+.wave span:nth-child(10),
+.wave span:nth-child(14) {
+    border-color: #67c76f;
+    box-shadow: 0 5px 0 #57a157;
+}
+
+.wave span:nth-child(3),
+.wave span:nth-child(7),
+.wave span:nth-child(11),
+.wave span:nth-child(15) {
+    border-color: #f895b3;
+    box-shadow: 0 5px 0 #c2184b;
+}
+
+.wave span:nth-child(4),
+.wave span:nth-child(8),
+.wave span:nth-child(12),
+.wave span:nth-child(16) {
+    border-color: #559da0;
+    box-shadow: 0 5px 0 #178181;
+}
+
+.wave span:nth-child(1) {
+    inset: 0;
+    animation-delay: 1.6s;
+}
+
+.wave span:nth-child(2) {
+    inset: 10px;
+    animation-delay: 1.5s;
+}
+
+.wave span:nth-child(3) {
+    inset: 20px;
+    animation-delay: 1.4s;
+}
+
+.wave span:nth-child(4) {
+    inset: 30px;
+    animation-delay: 1.3s;
+}
+
+.wave span:nth-child(5) {
+    inset: 40px;
+    animation-delay: 1.2s;
+}
+
+.wave span:nth-child(6) {
+    inset: 50px;
+    animation-delay: 1.1s;
+}
+
+.wave span:nth-child(7) {
+    inset: 60px;
+    animation-delay: 1.0s;
+}
+
+.wave span:nth-child(8) {
+    inset: 70px;
+    animation-delay: 0.9s;
+}
+
+.wave span:nth-child(9) {
+    inset: 80px;
+    animation-delay: 0.8s;
+}
+
+.wave span:nth-child(10) {
+    inset: 90px;
+    animation-delay: 0.7s;
+}
+
+.wave span:nth-child(11) {
+    inset: 100px;
+    animation-delay: 0.6s;
+}
+
+.wave span:nth-child(12) {
+    inset: 110px;
+    animation-delay: 0.5s;
+}
+
+.wave span:nth-child(13) {
+    inset: 120px;
+    animation-delay: 0.4s;
+}
+
+.wave span:nth-child(14) {
+    inset: 130px;
+    animation-delay: 0.3s;
+}
+
+.wave span:nth-child(15) {
+    inset: 140px;
+    animation-delay: 0.2s;
+}
+
+.wave span:nth-child(8) {
+    inset: 150px;
+    animation-delay: 0.1s;
+}
