@@ -1,0 +1,11 @@
+.main {
+    background-color: #e9f9ff;
+    padding: 1rem;
+
+    .mainTitulos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

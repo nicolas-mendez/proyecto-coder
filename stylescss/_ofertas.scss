@@ -1,0 +1,87 @@
+.ofertas {
+    background-color: #b8dbd3;
+    padding: 2rem;
+    text-align: center;
+
+    h2 {
+        padding-bottom: 1rem;
+        font-family: 'nunito', sans-serif;
+    }
+
+    .cajaOfertas {
+
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .ofertaProd {
+        font-family: sans-serif;
+        width: 30%;
+
+        .imgOferta {
+            overflow: hidden;
+            position: relative;
+            border-radius: 15px;
+
+            img {
+                width: 105%;
+                transition: all 0.5s;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+
+            .promo {
+                position: absolute;
+                top: 10px;
+                left: 0;
+
+                font-size: 1.2rem;
+                background: #f0ff00;
+                padding: .5rem;
+                color: black;
+                border-bottom-right-radius: 25px;
+                border-top-right-radius: 25px;
+            }
+        }
+
+        .nombreOferta {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+
+            h3 {
+                margin: 0;
+            }
+
+            h3,
+            strong,
+            span {
+                padding: 5px 15px;
+                width: 100%;
+            }
+        }
+
+        .añadirCarrito {
+            margin-top: 2px;
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            padding: 15px;
+            border: 1px solid black;
+            border-radius: 25px;
+
+            &:hover {
+                color: black;
+                background-color: transparent;
+                border: 1px solid black;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.productos {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    .carta {
+        width: 25%;
+        border: #000 solid .1rem;
+    }
+
+    .producto {
+        background-color: #d2e0f2;
+
+        a {
+            font-family: 'Nunito', sans-serif;
+            text-decoration: none;
+            color: #000;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .nombreProducto {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .imgProducto {
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                transition: all 0.5s;
+
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,27 @@
+.footer {
+    background-color: $fondoColor;
+    padding: .5rem;
+    display: grid;
+    grid-template-areas:
+        "redes-sociales"
+        "copy"
+    ;
+    justify-content: center;
+    grid-gap: 1rem;
+
+    p {
+        font-size: 1rem;
+        grid-area: copy;
+    }
+
+    .iconsRedes {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        grid-area: redes-sociales;
+
+        i {
+            color: #000;
+        }
+    }
+}
