@@ -21,7 +21,8 @@ nav .buttonSearch {
   padding: .5rem;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "redes-sociales" "copy";
+      grid-template-areas: "redes-sociales"
+ "copy";
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
