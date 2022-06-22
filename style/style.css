@@ -21,8 +21,7 @@ nav .buttonSearch {
   padding: .5rem;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "redes-sociales"
- "copy";
+      grid-template-areas: "redes-sociales" "copy";
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -96,6 +95,18 @@ nav .buttonSearch {
           justify-content: center;
 }
 
+@media screen and (max-width: 720px) {
+  .main .paddun {
+    padding-left: 8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main .paddun {
+    padding: .5rem;
+  }
+}
+
 .ofertas {
   background-color: #b8dbd3;
   padding: 2rem;
@@ -141,18 +152,6 @@ nav .buttonSearch {
           transform: scale(1.2);
 }
 
-.ofertas .ofertaProd .imgOferta .promo {
-  position: absolute;
-  top: 10px;
-  left: 0;
-  font-size: 1.2rem;
-  background: #f0ff00;
-  padding: .5rem;
-  color: black;
-  border-bottom-right-radius: 25px;
-  border-top-right-radius: 25px;
-}
-
 .ofertas .ofertaProd .nombreOferta {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -194,6 +193,24 @@ nav .buttonSearch {
   color: black;
   background-color: transparent;
   border: 1px solid black;
+}
+
+@media screen and (max-width: 720px) {
+  .ofertas {
+    padding: 1.5rem;
+  }
+  .ofertas .ofertaProd {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ofertas {
+    padding: 1rem;
+  }
+  .ofertas .ofertaProd {
+    width: 80%;
+  }
 }
 
 .productos {
@@ -254,5 +271,76 @@ nav .buttonSearch {
 .productos .producto .imgProducto img:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
+}
+
+@media screen and (max-width: 720px) {
+  .productos .carta {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .productos .carta {
+    width: 75%;
+  }
+}
+
+.frecuentes {
+  padding: 2.5rem 5rem;
+  background-color: #e9f9ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.frecuentes h1 {
+  border: #000 solid .1rem;
+  background-color: #eeeeee;
+}
+
+.frecuentes section {
+  border: #000 solid .1rem;
+  background-color: #e8e1ee;
+}
+
+.frecuentes section li {
+  list-style: none;
+}
+
+.frecuentes section li ul {
+  padding: .3rem;
+}
+
+.frecuentes section li ul h2 {
+  font-size: 1.5rem;
+}
+
+.frecuentes section li ul p {
+  margin: .2rem;
+  background-color: #e3cae5;
+}
+
+.frecuentes section li ul p a {
+  color: #000;
+}
+
+@media screen and (max-width: 720px) {
+  .frecuentes {
+    padding: 1.5rem 2.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .frecuentes {
+    padding: .5rem 1.25rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

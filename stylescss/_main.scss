@@ -9,3 +9,21 @@
         justify-content: center;
     }
 }
+
+@media screen AND(max-width:720px){
+
+   .main{ 
+       .paddun{
+            padding-left: 8rem;
+       }
+    }
+}
+@media screen AND(max-width:480px){
+
+    .main{ 
+        .paddun{
+            padding: .5rem;
+        }
+        
+    }
+}

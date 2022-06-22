@@ -35,18 +35,7 @@
                 }
             }
 
-            .promo {
-                position: absolute;
-                top: 10px;
-                left: 0;
-
-                font-size: 1.2rem;
-                background: #f0ff00;
-                padding: .5rem;
-                color: black;
-                border-bottom-right-radius: 25px;
-                border-top-right-radius: 25px;
-            }
+            
         }
 
         .nombreOferta {
@@ -82,6 +71,28 @@
                 background-color: transparent;
                 border: 1px solid black;
             }
+        }
+    }
+}
+
+
+@media screen AND(max-width:720px){
+    .ofertas{
+        padding: 1.5rem;
+
+        .ofertaProd{
+            width: 45%;
+        }
+    }
+    
+}
+
+@media screen AND(max-width:480px){
+    .ofertas{
+        padding: 1rem;
+
+        .ofertaProd{
+            width: 80%;
         }
     }
 }

@@ -45,3 +45,19 @@
     }
 
 }
+
+@media screen AND(max-width:720px) {
+    .productos{
+        .carta{
+            width: 40%;
+        }
+    }
+}
+
+@media screen AND(max-width:480px) {
+    .productos{
+        .carta{
+            width: 75%;
+        }
+    }
+}
