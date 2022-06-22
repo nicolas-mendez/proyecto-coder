@@ -1,0 +1,126 @@
+@import "variables";
+
+.contacto{
+    background-color: $fondoContacto;
+    color: #000000;
+    
+
+    &__caja {
+        padding: 8rem;
+        max-width: 1300px;
+
+        @include breakpoint(md){
+            padding: 4rem;
+        }
+
+        @include breakpoint(sm){
+            padding: .5rem;
+        }
+
+        .contacto__row {
+            display: flex;
+            align-items: center;
+            padding: 100px 0;
+
+            @include breakpoint(md){
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 50px 0;
+            }
+
+            @include breakpoint(sm){
+                padding: 0;
+            }
+
+            &-text {
+                width: 60%;
+                padding-right: 40px;
+                padding-top: 90px;
+
+                @include breakpoint(md){
+                    padding-right: 0;
+                    width: 90%;
+                }
+
+                @include breakpoint(sm){
+                    width: 100%;
+                }
+
+                a{
+                    margin-top: 30px;
+                }
+            }
+        }
+
+        .contacto__row-form{
+            width: 40%;
+            margin-left: 90px;
+
+            @include breakpoint(md){
+                margin-left: 0;
+                margin-top: 40px;
+                width: 80%;
+            }
+
+            @include breakpoint(sm){
+                width: 100%;
+            }
+
+            .form-logo{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                color: #000000;
+                font-size: 2rem;
+                padding: 70px;
+                background-image: linear-gradient(to right, #b8dbd3, 	#f2f6c3 );
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+
+                p{
+                    font-weight: 600;
+                }
+            }
+
+            form{
+                background-color: #f2f2f2;
+                padding: 50px 50px 70px 50px;
+                border-bottom-left-radius: 50px;
+                border-bottom-right-radius: 50px;
+            }
+        }
+    }
+    
+}
+
+form{
+
+    label{
+        display: inline-block ;
+        margin-bottom: 6px;
+        color: #000 ;
+    }
+    
+    .form-group{
+        margin-bottom: 10px;
+    }
+
+    .form-control{
+        width: 100%;
+        padding: 10px 12px;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #000000;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #eeeeee;
+    
+    }
+
+    a{
+        width: 100%;
+        text-align: center;
+    }
+    
+}

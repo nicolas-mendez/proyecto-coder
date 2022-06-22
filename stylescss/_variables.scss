@@ -1,12 +1,22 @@
 $fondoColor: #dfdbda;
 $border: solid .1rem #000;
+$fondoContacto:  #c9c9ff;
 
 //lista 
 $texts: 
-    "h1" 3rem   600     1.6,
-    "h2" 2rem   400     1.6,
-    "h3" 1.5rem bold    1.6,
+    "h1" 2.5rem   600     1.6,
+    "h2" 1.75rem   400     1.6,
+    "h3" 1.25rem bold    1.6,
     "p"  1rem   200;
+
+//each
+@each $name, $fs, $fw, $lh in $texts {
+    .text-#{$name}{
+        font-size: $fs;
+        font-weight: $fw;
+        line-height: $lh;
+    }
+}
 
 //map
 
@@ -15,6 +25,18 @@ $breakpoints:  (
     md:768px,
     lg:1024px,
 );
+
+//mixin
+
+@mixin breakpoint($size) {
+    @if map-has-key($breakpoints, $size){
+        @media (max-width: #{map-get($breakpoints, $size)}){
+            @content;
+        }
+    }
+}
+
+
 
 //extend
 %btn {
@@ -26,4 +48,31 @@ $breakpoints:  (
     letter-spacing: 1px;
     border-radius: 30px;
     margin: 5px;
+}
+
+.btn {
+    &__light, &__dark{
+        @extend %btn;
+    }
+
+    &__light{
+        background-color: #f7e7b4;
+        border: none;
+        color: #000;
+
+        &:hover{
+            background-color: #b8dbd3;
+        }
+    }
+
+    &__dark{
+        background-color: #68c4af;
+        color: #000;
+        
+        &:hover{
+            background-color: #f2f6c3;
+            border: none;
+        }
+    
+    }
 }
