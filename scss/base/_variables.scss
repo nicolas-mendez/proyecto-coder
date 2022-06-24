@@ -1,0 +1,18 @@
+$fondoColor: #dfdbda;
+$border: solid .1rem #000;
+$fondoContacto:  #c9c9ff;
+
+//lista 
+$texts: 
+    "h1" 2.5rem   600     1.6,
+    "h2" 1.75rem   400     1.6,
+    "h3" 1.25rem bold    1.6,
+    "p"  1rem   200;
+
+//map
+
+$breakpoints:  (
+    sm:480px,
+    md:768px,
+    lg:1024px,
+);

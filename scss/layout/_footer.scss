@@ -1,3 +1,6 @@
+@import "../base/variables";
+@import "../utilities/mixins";
+
 .footer {
     background-color: $fondoColor;
     padding: .5rem;

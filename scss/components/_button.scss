@@ -1,0 +1,39 @@
+@import "../base/variables";
+
+%btn {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 12px 40px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.btn {
+    &__light, &__dark{
+        @extend %btn;
+    }
+
+    &__light{
+        background-color: #f7e7b4;
+        border: none;
+        color: #000;
+
+        &:hover{
+            background-color: #b8dbd3;
+        }
+    }
+
+    &__dark{
+        background-color: #68c4af;
+        color: #000;
+        
+        &:hover{
+            background-color: #f2f6c3;
+            border: none;
+        }
+    
+    }
+}

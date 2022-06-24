@@ -1,4 +1,6 @@
-@import "variables";
+@import "../base/variables";
+@import "../utilities/mixins";
+
 
 .contacto{
     background-color: $fondoContacto;
