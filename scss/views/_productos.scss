@@ -1,3 +1,6 @@
+@import "../base/variables";
+@import "../utilities/mixins";
+
 .productos {
     width: 100%;
     display: flex;
@@ -8,7 +11,17 @@
     .carta {
         width: 25%;
         border: #000 solid .1rem;
+
+        @include breakpoint(md){
+            width: 40%;
+        };
+    
+        @include breakpoint(sm){
+            width: 75%;
+        };
     }
+
+    
 
     .producto {
         background-color: #d2e0f2;
@@ -46,18 +59,5 @@
 
 }
 
-@media screen AND(max-width:720px) {
-    .productos{
-        .carta{
-            width: 40%;
-        }
-    }
-}
 
-@media screen AND(max-width:480px) {
-    .productos{
-        .carta{
-            width: 75%;
-        }
-    }
-}
+
