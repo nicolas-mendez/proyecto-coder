@@ -534,4 +534,153 @@ form a {
   width: 100%;
   text-align: center;
 }
+
+.caja__staff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #c7eff0;
+}
+
+.caja__staff h1 {
+  padding: 2rem;
+  background-color: #2398a6;
+  width: 100%;
+  text-align: center;
+}
+
+.caja__staff h2 {
+  padding: 2rem;
+  background-color: #8fe1e7;
+  width: 100%;
+  text-align: center;
+}
+
+.caja__staff .staff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 70vh;
+}
+
+.caja__staff .staff .carta__staff {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 2rem;
+}
+
+@media (max-width: 480px) {
+  .caja__staff .staff .carta__staff {
+    width: 250px;
+    height: 300px;
+  }
+}
+
+.caja__staff .staff .carta__staff:hover .frente {
+  -webkit-transform: perspective(600px) rotateY(180deg);
+          transform: perspective(600px) rotateY(180deg);
+}
+
+.caja__staff .staff .carta__staff:hover .atras {
+  -webkit-transform: perspective(600px) rotateY(360deg);
+          transform: perspective(600px) rotateY(360deg);
+}
+
+.caja__staff .staff .carta__staff .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.caja__staff .staff .carta__staff .frente {
+  -webkit-transform: perspective(600px) rotateY(0deg);
+          transform: perspective(600px) rotateY(0deg);
+  -webkit-box-shadow: 0 5px 10px #000;
+          box-shadow: 0 5px 10px #000;
+}
+
+.caja__staff .staff .carta__staff .frente img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.caja__staff .staff .carta__staff .frente h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #f2f2f2;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.caja__staff .staff .carta__staff .atras {
+  -webkit-transform: perspective(600px) rotateY(180deg);
+          transform: perspective(600px) rotateY(180deg);
+  background: #92ccdd;
+  padding: 15px;
+  color: #767691;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  -webkit-box-shadow: 0 5px 10px #000;
+          box-shadow: 0 5px 10px #000;
+}
+
+.caja__staff .staff .carta__staff .atras h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.caja__staff .staff .carta__staff .atras p {
+  letter-spacing: 1px;
+}
+
+.caja__staff .staff .carta__staff .atras .link {
+  border-top: 1px solid #767691;
+  height: 50px;
+  line-height: 50px;
+}
+
+.caja__staff .staff .carta__staff .atras .link a {
+  color: #767691;
+}
 /*# sourceMappingURL=style.css.map */

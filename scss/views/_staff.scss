@@ -1,0 +1,120 @@
+@import "../utilities/mixins";
+@import "../base/variables";
+
+.caja__staff{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #c7eff0;
+
+   h1{
+    padding: 2rem;
+    background-color: #2398a6;
+    width: 100%;
+    text-align: center;
+   }
+
+   h2{
+    padding: 2rem;
+    background-color: #8fe1e7;
+    width: 100%;
+    text-align: center;
+   }
+
+   .staff{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+
+        .carta__staff{
+            position: relative;
+            width: 300px;
+            height: 350px;
+            margin: 2rem;
+
+            @include breakpoint(sm){
+                width: 250px;
+                height: 300px;
+            };
+
+            &:hover .frente{
+                transform: perspective(600px)
+                rotateY(180deg);
+            }
+            &:hover .atras{
+                transform: perspective(600px)
+                rotateY(360deg);
+            }
+
+            .face{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: 1s;
+            }
+
+            .frente{
+                transform: perspective(600px) rotateY(0deg);
+                box-shadow: 0 5px 10px #000;
+
+                img{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                h3{
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: 45px;
+                    line-height: 45px;
+                    color: #f2f2f2;
+                    background: rgba(0,0,0,.4);
+                    text-align: center;
+                }
+
+            }
+
+            .atras{
+                transform: perspective(600px)
+                rotateY(180deg);
+                background: #92ccdd;
+                padding: 15px;
+                color: #767691;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: center;
+                box-shadow: 0 5px 10px #000 ;
+
+                h3{
+                    font-size: 30px;
+                    margin-top: 20px;
+                    letter-spacing: 2px;
+                }
+
+                p{
+                   letter-spacing: 1px; 
+                }
+
+                .link{
+                    border-top: 1px solid #767691;
+                    height: 50px;
+                    line-height: 50px;
+
+                    a{
+                        color: #767691;
+                    }
+                }
+            }
+        }
+    }
+}  
