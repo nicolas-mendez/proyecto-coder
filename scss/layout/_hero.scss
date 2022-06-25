@@ -1,16 +1,24 @@
 @import "../base/variables";
 @import "../utilities/mixins";
 
+.heroTitulos {
+    width: 100%;
+    padding: .5rem;
+    background-color: #e4f9c7;
+    h1{
+        text-align: center;
+    }
+
+    h3{
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+    }
+}
+
 .hero {
     background-color: #eae9d2;
     padding: 1rem;
-
-    .heroTitulos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: .5rem;
-    }
-
 }

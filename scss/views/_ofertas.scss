@@ -1,12 +1,21 @@
+
+.tituloOfertas{
+    h2 {
+        text-align: center;
+        padding: 1rem;
+        margin: 0;
+        font-family: 'nunito', sans-serif;
+        width: 100%;
+        background-color: #cfeef2;
+    }
+}
+
 .ofertas {
     background-color: #b8dbd3;
     padding: 2rem;
     text-align: center;
 
-    h2 {
-        padding-bottom: 1rem;
-        font-family: 'nunito', sans-serif;
-    }
+    
 
     .cajaOfertas {
 

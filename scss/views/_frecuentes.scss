@@ -1,20 +1,27 @@
 @import "../base/variables";
 
+.frecuentesTitulos{
+    background-color: #eeeeee;
+    width: 100%;  
+    border-bottom: #000 solid .2rem;
+    padding: 1rem;
+    margin: 0;
+    h1{
+        text-align: center;
+        font-size: 2rem;
+        
+    }
+}
 .frecuentes{
-    padding: 2.5rem 5rem;
-    background-color: #e9f9ff;
+    padding: 1.5rem 5rem;
+    min-height: 80vh;
+    background-color: #ffe8bd;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     
-    h1{
-        border: #000 solid .1rem;
-        background-color: #eeeeee;
-        
-    }
-    
-    section{
+    div{
         border: #000 solid .1rem;
         background-color: #e8e1ee;
 

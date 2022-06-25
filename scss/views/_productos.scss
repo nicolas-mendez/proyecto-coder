@@ -1,8 +1,26 @@
 @import "../base/variables";
 @import "../utilities/mixins";
 
+.productosTitulos{
+    background-color: #92ccdd;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+
+    h2{
+        text-align: center;   
+    }
+
+    i{
+        font-size: 1.5rem;
+    }
+        
+}
+
 .productos {
     width: 100%;
+    background-color: #bde8ff;
+    padding: 1rem;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;

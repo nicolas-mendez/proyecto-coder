@@ -52,26 +52,27 @@ nav .buttonSearch {
   color: #000;
 }
 
+.heroTitulos {
+  width: 100%;
+  padding: .5rem;
+  background-color: #e4f9c7;
+}
+
+.heroTitulos h1 {
+  text-align: center;
+}
+
+.heroTitulos h3 {
+  text-align: center;
+}
+
+.heroTitulos p {
+  text-align: center;
+}
+
 .hero {
   background-color: #eae9d2;
   padding: 1rem;
-}
-
-.hero .heroTitulos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: .5rem;
 }
 
 .btn__light, .btn__dark {
@@ -128,36 +129,34 @@ nav .buttonSearch {
   font-weight: 200;
 }
 
+.mainTitulos {
+  background-color: #92ccdd;
+  padding: 1rem;
+  width: 100%;
+}
+
+.mainTitulos h2 {
+  text-align: center;
+}
+
 .main {
   background-color: #e9f9ff;
   padding: 1rem;
 }
 
-.main .mainTitulos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.tituloOfertas h2 {
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+  font-family: 'nunito', sans-serif;
+  width: 100%;
+  background-color: #cfeef2;
 }
 
 .ofertas {
   background-color: #b8dbd3;
   padding: 2rem;
   text-align: center;
-}
-
-.ofertas h2 {
-  padding-bottom: 1rem;
-  font-family: 'nunito', sans-serif;
 }
 
 .ofertas .cajaOfertas {
@@ -255,8 +254,25 @@ nav .buttonSearch {
   }
 }
 
+.productosTitulos {
+  background-color: #92ccdd;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.productosTitulos h2 {
+  text-align: center;
+}
+
+.productosTitulos i {
+  font-size: 1.5rem;
+}
+
 .productos {
   width: 100%;
+  background-color: #bde8ff;
+  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,9 +343,23 @@ nav .buttonSearch {
           transform: scale(1.3);
 }
 
+.frecuentesTitulos {
+  background-color: #eeeeee;
+  width: 100%;
+  border-bottom: #000 solid .2rem;
+  padding: 1rem;
+  margin: 0;
+}
+
+.frecuentesTitulos h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
 .frecuentes {
-  padding: 2.5rem 5rem;
-  background-color: #e9f9ff;
+  padding: 1.5rem 5rem;
+  min-height: 80vh;
+  background-color: #ffe8bd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,34 +373,29 @@ nav .buttonSearch {
   text-align: center;
 }
 
-.frecuentes h1 {
-  border: #000 solid .1rem;
-  background-color: #eeeeee;
-}
-
-.frecuentes section {
+.frecuentes div {
   border: #000 solid .1rem;
   background-color: #e8e1ee;
 }
 
-.frecuentes section li {
+.frecuentes div li {
   list-style: none;
 }
 
-.frecuentes section li ul {
+.frecuentes div li ul {
   padding: .3rem;
 }
 
-.frecuentes section li ul h2 {
+.frecuentes div li ul h2 {
   font-size: 1.5rem;
 }
 
-.frecuentes section li ul p {
+.frecuentes div li ul p {
   margin: .2rem;
   background-color: #e3cae5;
 }
 
-.frecuentes section li ul p a {
+.frecuentes div li ul p a {
   color: #000;
 }
 
@@ -557,6 +582,7 @@ form a {
   background-color: #2398a6;
   width: 100%;
   text-align: center;
+  margin: 0;
 }
 
 .caja__staff h2 {
