@@ -1,5 +1,5 @@
 @each $name, $fs, $fw, $lh in $texts {
-    .text-#{$name}{
+    .text-#{$name} {
         font-size: $fs;
         font-weight: $fw;
         line-height: $lh;

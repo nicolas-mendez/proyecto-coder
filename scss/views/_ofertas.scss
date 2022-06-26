@@ -1,5 +1,4 @@
-
-.tituloOfertas{
+.tituloOfertas {
     h2 {
         text-align: center;
         padding: 1rem;
@@ -15,7 +14,7 @@
     padding: 2rem;
     text-align: center;
 
-    
+
 
     .cajaOfertas {
 
@@ -44,7 +43,7 @@
                 }
             }
 
-            
+
         }
 
         .nombreOferta {
@@ -85,22 +84,22 @@
 }
 
 
-@media screen AND(max-width:720px){
-    .ofertas{
+@media screen AND(max-width:720px) {
+    .ofertas {
         padding: 1.5rem;
 
-        .ofertaProd{
+        .ofertaProd {
             width: 45%;
         }
     }
-    
+
 }
 
-@media screen AND(max-width:480px){
-    .ofertas{
+@media screen AND(max-width:480px) {
+    .ofertas {
         padding: 1rem;
 
-        .ofertaProd{
+        .ofertaProd {
             width: 80%;
         }
     }

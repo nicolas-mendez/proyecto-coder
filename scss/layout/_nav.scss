@@ -1,10 +1,10 @@
 @import "../base/variables";
 @import "../utilities/mixins";
 
-nav{
+nav {
     background-color: $fondoColor;
 
-    .buttonSearch{
+    .buttonSearch {
         border: $border;
     }
 }

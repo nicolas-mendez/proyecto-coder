@@ -12,28 +12,30 @@
 }
 
 .btn {
-    &__light, &__dark{
+
+    &__light,
+    &__dark {
         @extend %btn;
     }
 
-    &__light{
+    &__light {
         background-color: #f7e7b4;
         border: none;
         color: #000;
 
-        &:hover{
+        &:hover {
             background-color: #b8dbd3;
         }
     }
 
-    &__dark{
+    &__dark {
         background-color: #68c4af;
         color: #000;
-        
-        &:hover{
+
+        &:hover {
             background-color: #f2f6c3;
             border: none;
         }
-    
+
     }
 }
