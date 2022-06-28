@@ -133,7 +133,6 @@ nav .buttonSearch {
 }
 
 .mainTitulos {
-  /*background-color: $fondoColor2;*/
   background-image: -webkit-gradient(linear, left top, left bottom, from(#a89070), to(#d2b48c));
   background-image: linear-gradient(to bottom, #a89070, #d2b48c);
   padding: 1rem;
@@ -168,7 +167,6 @@ nav .buttonSearch {
   margin: 0;
   font-family: 'nunito', sans-serif;
   width: 100%;
-  /*background-color: $fondoColor2;*/
   background-image: -webkit-gradient(linear, left top, left bottom, from(#a89070), to(#d2b48c));
   background-image: linear-gradient(to bottom, #a89070, #d2b48c);
 }
@@ -275,7 +273,6 @@ nav .buttonSearch {
 }
 
 .productosTitulos {
-  /*background-color: $fondoColor2;*/
   background-image: -webkit-gradient(linear, left top, left bottom, from(#a89070), to(#d2b48c));
   background-image: linear-gradient(to bottom, #a89070, #d2b48c);
   padding: 1rem;
@@ -384,7 +381,6 @@ nav .buttonSearch {
 }
 
 .frecuentesTitulos {
-  /*background-color: $fondoColor2;*/
   background-image: -webkit-gradient(linear, left top, left bottom, from(#a89070), to(#d2b48c));
   background-image: linear-gradient(to bottom, #a89070, #d2b48c);
   width: 100%;
