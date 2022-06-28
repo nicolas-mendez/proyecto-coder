@@ -1,5 +1,6 @@
 .mainTitulos {
-    background-color: #92ccdd;
+    /*background-color: $fondoColor2;*/
+    background-image: linear-gradient(to bottom, $fondoColor2, $fondoColor3);
     padding: 1rem;
     width: 100%;
 
@@ -9,6 +10,19 @@
 }
 
 .main {
-    background-color: #e9f9ff;
+    background-color: $fondoColor4;
     padding: 1rem;
+
+    .fondoCard{
+        background-color: $fondoColor3;
+
+        .fondoButtom{
+            background-color: $fondoColor2;
+            color: #000;
+
+            &:hover{
+                background-color: transparent;
+            }
+        }
+    }
 }

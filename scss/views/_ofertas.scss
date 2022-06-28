@@ -5,12 +5,13 @@
         margin: 0;
         font-family: 'nunito', sans-serif;
         width: 100%;
-        background-color: #cfeef2;
+        /*background-color: $fondoColor2;*/
+        background-image: linear-gradient(to bottom, $fondoColor2, $fondoColor3);
     }
 }
 
 .ofertas {
-    background-color: #b8dbd3;
+    background-color: $fondoColor4;
     padding: 2rem;
     text-align: center;
 
@@ -68,16 +69,16 @@
         .añadirCarrito {
             margin-top: 2px;
             text-decoration: none;
-            color: white;
-            background-color: black;
+            color: #000;
+            background-color: $fondoColor;
             padding: 15px;
-            border: 1px solid black;
+            border: 1px solid #000;
             border-radius: 25px;
 
             &:hover {
-                color: black;
+                color: #000;
                 background-color: transparent;
-                border: 1px solid black;
+                border: 1px solid #000;
             }
         }
     }

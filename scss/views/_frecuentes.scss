@@ -1,7 +1,8 @@
 @import "../base/variables";
 
 .frecuentesTitulos {
-    background-color: #eeeeee;
+    /*background-color: $fondoColor2;*/
+    background-image: linear-gradient(to bottom, $fondoColor2, $fondoColor3);
     width: 100%;
     border-bottom: #000 solid .2rem;
     padding: 1rem;
@@ -17,7 +18,7 @@
 .frecuentes {
     padding: 1.5rem 5rem;
     min-height: 80vh;
-    background-color: #ffe8bd;
+    background-color: $fondoColor4;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,7 +26,7 @@
 
     div {
         border: #000 solid .1rem;
-        background-color: #e8e1ee;
+        background-color: $fondoColor4;
 
         li {
             list-style: none;
@@ -39,7 +40,7 @@
 
                 p {
                     margin: .2rem;
-                    background-color: #e3cae5;
+                    background-color: $fondoColor5;
 
                     a {
                         color: #000;

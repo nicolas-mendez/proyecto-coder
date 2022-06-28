@@ -2,7 +2,8 @@
 @import "../utilities/mixins";
 
 .productosTitulos {
-    background-color: #92ccdd;
+    /*background-color: $fondoColor2;*/
+    background-image: linear-gradient(to bottom, $fondoColor2, $fondoColor3);
     padding: 1rem;
     width: 100%;
     text-align: center;
@@ -19,7 +20,7 @@
 
 .productos {
     width: 100%;
-    background-color: #bde8ff;
+    background-color: $fondoColor4;
     padding: 1rem;
     display: flex;
     justify-content: space-around;
@@ -46,7 +47,7 @@
 
 
     .producto {
-        background-color: #d2e0f2;
+        background-color: $fondoColor5;
 
         a {
             font-family: 'Nunito', sans-serif;
@@ -79,4 +80,22 @@
         }
     }
 
+}
+
+.heroProductos{
+    background-color: $fondoColor4;
+    padding: 1rem;
+
+    .fondoCard{
+        background-color: $fondoColor3;
+
+        .fondoButtom{
+            background-color: $fondoColor2;
+            color: #000;
+
+            &:hover{
+                background-color: transparent;
+            }
+        }
+    }
 }

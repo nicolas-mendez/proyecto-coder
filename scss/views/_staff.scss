@@ -6,21 +6,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #c7eff0;
+    background-color: $fondoColor5;
 
     h1 {
         padding: 2rem;
-        background-color: #2398a6;
+        background-image: linear-gradient(to bottom, $fondoColor2, $fondoColor3);
         width: 100%;
         text-align: center;
         margin: 0;
-    }
-
-    h2 {
-        padding: 2rem;
-        background-color: #8fe1e7;
-        width: 100%;
-        text-align: center;
     }
 
     .staff {
@@ -28,7 +21,7 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        min-height: 70vh;
+        min-height: 80vh;
 
         .carta__staff {
             position: relative;
@@ -87,9 +80,9 @@
 
             .atras {
                 transform: perspective(600px) rotateY(180deg);
-                background: #92ccdd;
+                background: $fondoColor;
                 padding: 15px;
-                color: #767691;
+                color: $fondoColor5;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -107,12 +100,12 @@
                 }
 
                 .link {
-                    border-top: 1px solid #767691;
+                    border-top: 1px solid $fondoColor5;
                     height: 50px;
                     line-height: 50px;
 
                     a {
-                        color: #767691;
+                        color: $fondoColor5;
                     }
                 }
             }

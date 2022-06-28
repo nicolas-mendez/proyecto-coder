@@ -4,7 +4,7 @@
 .heroTitulos {
     width: 100%;
     padding: .5rem;
-    background-color: #e4f9c7;
+    background-image: linear-gradient(to bottom, $fondoColor2, $fondoColor3);
 
     h1 {
         text-align: center;
@@ -20,6 +20,6 @@
 }
 
 .hero {
-    background-color: #eae9d2;
+    background-color: $fondoColor4;
     padding: 1rem;
 }

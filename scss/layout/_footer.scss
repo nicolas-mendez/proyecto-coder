@@ -2,7 +2,7 @@
 @import "../utilities/mixins";
 
 .footer {
-    background-color: $fondoColor;
+    background-image: linear-gradient(to top, $fondoColor, $fondoColor4);
     padding: .5rem;
     display: grid;
     grid-template-areas:

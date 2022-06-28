@@ -9,7 +9,8 @@
 }
 
 nav {
-  background-color: #dfdbda;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7e6c54), to(#a89070));
+  background-image: linear-gradient(to bottom, #7e6c54, #a89070);
 }
 
 nav .buttonSearch {
@@ -17,7 +18,8 @@ nav .buttonSearch {
 }
 
 .footer {
-  background-color: #dfdbda;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#7e6c54), to(#e4d2ba));
+  background-image: linear-gradient(to top, #7e6c54, #e4d2ba);
   padding: .5rem;
   display: -ms-grid;
   display: grid;
@@ -55,7 +57,8 @@ nav .buttonSearch {
 .heroTitulos {
   width: 100%;
   padding: .5rem;
-  background-color: #e4f9c7;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a89070), to(#d2b48c));
+  background-image: linear-gradient(to bottom, #a89070, #d2b48c);
 }
 
 .heroTitulos h1 {
@@ -71,7 +74,7 @@ nav .buttonSearch {
 }
 
 .hero {
-  background-color: #eae9d2;
+  background-color: #e4d2ba;
   padding: 1rem;
 }
 
@@ -87,22 +90,22 @@ nav .buttonSearch {
 }
 
 .btn__light {
-  background-color: #f7e7b4;
+  background-color: #f1e8dc;
   border: none;
   color: #000;
 }
 
 .btn__light:hover {
-  background-color: #b8dbd3;
+  background-color: #7e6c54;
 }
 
 .btn__dark {
-  background-color: #68c4af;
+  background-color: #7e6c54;
   color: #000;
 }
 
 .btn__dark:hover {
-  background-color: #f2f6c3;
+  background-color: #f1e8dc;
   border: none;
 }
 
@@ -130,7 +133,9 @@ nav .buttonSearch {
 }
 
 .mainTitulos {
-  background-color: #92ccdd;
+  /*background-color: $fondoColor2;*/
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a89070), to(#d2b48c));
+  background-image: linear-gradient(to bottom, #a89070, #d2b48c);
   padding: 1rem;
   width: 100%;
 }
@@ -140,8 +145,21 @@ nav .buttonSearch {
 }
 
 .main {
-  background-color: #e9f9ff;
+  background-color: #e4d2ba;
   padding: 1rem;
+}
+
+.main .fondoCard {
+  background-color: #d2b48c;
+}
+
+.main .fondoCard .fondoButtom {
+  background-color: #a89070;
+  color: #000;
+}
+
+.main .fondoCard .fondoButtom:hover {
+  background-color: transparent;
 }
 
 .tituloOfertas h2 {
@@ -150,11 +168,13 @@ nav .buttonSearch {
   margin: 0;
   font-family: 'nunito', sans-serif;
   width: 100%;
-  background-color: #cfeef2;
+  /*background-color: $fondoColor2;*/
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a89070), to(#d2b48c));
+  background-image: linear-gradient(to bottom, #a89070, #d2b48c);
 }
 
 .ofertas {
-  background-color: #b8dbd3;
+  background-color: #e4d2ba;
   padding: 2rem;
   text-align: center;
 }
@@ -223,17 +243,17 @@ nav .buttonSearch {
 .ofertas .ofertaProd .añadirCarrito {
   margin-top: 2px;
   text-decoration: none;
-  color: white;
-  background-color: black;
+  color: #000;
+  background-color: #7e6c54;
   padding: 15px;
-  border: 1px solid black;
+  border: 1px solid #000;
   border-radius: 25px;
 }
 
 .ofertas .ofertaProd .añadirCarrito:hover {
-  color: black;
+  color: #000;
   background-color: transparent;
-  border: 1px solid black;
+  border: 1px solid #000;
 }
 
 @media screen and (max-width: 720px) {
@@ -255,7 +275,9 @@ nav .buttonSearch {
 }
 
 .productosTitulos {
-  background-color: #92ccdd;
+  /*background-color: $fondoColor2;*/
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a89070), to(#d2b48c));
+  background-image: linear-gradient(to bottom, #a89070, #d2b48c);
   padding: 1rem;
   width: 100%;
   text-align: center;
@@ -271,7 +293,7 @@ nav .buttonSearch {
 
 .productos {
   width: 100%;
-  background-color: #bde8ff;
+  background-color: #e4d2ba;
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -301,7 +323,7 @@ nav .buttonSearch {
 }
 
 .productos .producto {
-  background-color: #d2e0f2;
+  background-color: #f1e8dc;
 }
 
 .productos .producto a {
@@ -343,8 +365,28 @@ nav .buttonSearch {
           transform: scale(1.3);
 }
 
+.heroProductos {
+  background-color: #e4d2ba;
+  padding: 1rem;
+}
+
+.heroProductos .fondoCard {
+  background-color: #d2b48c;
+}
+
+.heroProductos .fondoCard .fondoButtom {
+  background-color: #a89070;
+  color: #000;
+}
+
+.heroProductos .fondoCard .fondoButtom:hover {
+  background-color: transparent;
+}
+
 .frecuentesTitulos {
-  background-color: #eeeeee;
+  /*background-color: $fondoColor2;*/
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a89070), to(#d2b48c));
+  background-image: linear-gradient(to bottom, #a89070, #d2b48c);
   width: 100%;
   border-bottom: #000 solid .2rem;
   padding: 1rem;
@@ -359,7 +401,7 @@ nav .buttonSearch {
 .frecuentes {
   padding: 1.5rem 5rem;
   min-height: 80vh;
-  background-color: #ffe8bd;
+  background-color: #e4d2ba;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,7 +417,7 @@ nav .buttonSearch {
 
 .frecuentes div {
   border: #000 solid .1rem;
-  background-color: #e8e1ee;
+  background-color: #e4d2ba;
 }
 
 .frecuentes div li {
@@ -392,7 +434,7 @@ nav .buttonSearch {
 
 .frecuentes div li ul p {
   margin: .2rem;
-  background-color: #e3cae5;
+  background-color: #f1e8dc;
 }
 
 .frecuentes div li ul p a {
@@ -412,12 +454,13 @@ nav .buttonSearch {
 }
 
 .contacto {
-  background-color: #c9c9ff;
+  background-color: #e4d2ba;
   color: #000000;
+  min-height: 85vh;
 }
 
 .contacto__caja {
-  padding: 8rem;
+  padding: 1.5rem;
   max-width: 1300px;
 }
 
@@ -517,8 +560,8 @@ nav .buttonSearch {
   color: #000000;
   font-size: 2rem;
   padding: 70px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#b8dbd3), to(#f2f6c3));
-  background-image: linear-gradient(to right, #b8dbd3, #f2f6c3);
+  background-image: -webkit-gradient(linear, left top, right top, from(#7e6c54), to(#f1e8dc));
+  background-image: linear-gradient(to right, #7e6c54, #f1e8dc);
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
 }
@@ -528,7 +571,7 @@ nav .buttonSearch {
 }
 
 .contacto__caja .contacto__row-form form {
-  background-color: #f2f2f2;
+  background-color: #f1e8dc;
   padding: 50px 50px 70px 50px;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -574,22 +617,16 @@ form a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #c7eff0;
+  background-color: #f1e8dc;
 }
 
 .caja__staff h1 {
   padding: 2rem;
-  background-color: #2398a6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a89070), to(#d2b48c));
+  background-image: linear-gradient(to bottom, #a89070, #d2b48c);
   width: 100%;
   text-align: center;
   margin: 0;
-}
-
-.caja__staff h2 {
-  padding: 2rem;
-  background-color: #8fe1e7;
-  width: 100%;
-  text-align: center;
 }
 
 .caja__staff .staff {
@@ -604,7 +641,7 @@ form a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 70vh;
+  min-height: 80vh;
 }
 
 .caja__staff .staff .carta__staff {
@@ -672,9 +709,9 @@ form a {
 .caja__staff .staff .carta__staff .atras {
   -webkit-transform: perspective(600px) rotateY(180deg);
           transform: perspective(600px) rotateY(180deg);
-  background: #92ccdd;
+  background: #7e6c54;
   padding: 15px;
-  color: #767691;
+  color: #f1e8dc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -701,12 +738,12 @@ form a {
 }
 
 .caja__staff .staff .carta__staff .atras .link {
-  border-top: 1px solid #767691;
+  border-top: 1px solid #f1e8dc;
   height: 50px;
   line-height: 50px;
 }
 
 .caja__staff .staff .carta__staff .atras .link a {
-  color: #767691;
+  color: #f1e8dc;
 }
 /*# sourceMappingURL=style.css.map */

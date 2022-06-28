@@ -2,7 +2,7 @@
 @import "../utilities/mixins";
 
 nav {
-    background-color: $fondoColor;
+    background-image: linear-gradient(to bottom, $fondoColor, $fondoColor2);
 
     .buttonSearch {
         border: $border;

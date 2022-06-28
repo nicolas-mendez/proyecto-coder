@@ -19,21 +19,21 @@
     }
 
     &__light {
-        background-color: #f7e7b4;
+        background-color: $fondoColor5;
         border: none;
         color: #000;
 
         &:hover {
-            background-color: #b8dbd3;
+            background-color: $fondoColor;
         }
     }
 
     &__dark {
-        background-color: #68c4af;
+        background-color: $fondoColor;
         color: #000;
 
         &:hover {
-            background-color: #f2f6c3;
+            background-color: $fondoColor5;
             border: none;
         }
 
