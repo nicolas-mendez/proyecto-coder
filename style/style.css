@@ -145,7 +145,7 @@ nav .buttonSearch {
 
 .main {
   background-color: #e4d2ba;
-  padding: 1rem;
+  padding: 1rem 0rem;
 }
 
 .main .fondoCard {
@@ -302,6 +302,12 @@ nav .buttonSearch {
   gap: 2rem;
 }
 
+@media (max-width: 768px) {
+  .productos {
+    padding: 1rem 0rem;
+  }
+}
+
 .productos .carta {
   width: 25%;
   border: #000 solid .1rem;
@@ -364,7 +370,7 @@ nav .buttonSearch {
 
 .heroProductos {
   background-color: #e4d2ba;
-  padding: 1rem;
+  padding: 1rem 0rem;
 }
 
 .heroProductos .fondoCard {

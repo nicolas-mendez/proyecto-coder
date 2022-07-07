@@ -26,6 +26,10 @@
     flex-wrap: wrap;
     gap: 2rem;
 
+    @include breakpoint(md) {
+        padding: 1rem 0rem;
+    }
+
     .carta {
         width: 25%;
         border: #000 solid .1rem;
@@ -83,7 +87,7 @@
 
 .heroProductos{
     background-color: $fondoColor4;
-    padding: 1rem;
+    padding: 1rem 0rem;
 
     .fondoCard{
         background-color: $fondoColor3;
